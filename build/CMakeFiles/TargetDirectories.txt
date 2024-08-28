@@ -815,6 +815,13 @@
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/wifi_provisioning/CMakeFiles/rebuild_cache.dir
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/wifi_provisioning/CMakeFiles/edit_cache.dir
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/install/strip.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/install/local.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/install.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/list_install_components.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/rebuild_cache.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/edit_cache.dir
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/CMakeFiles/__idf_joltwallet__littlefs.dir
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_modem/CMakeFiles/install/strip.dir
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_modem/CMakeFiles/install/local.dir
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_modem/CMakeFiles/install.dir

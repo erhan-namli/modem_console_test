@@ -5,3 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(modem-console)
+
+# Specify the custom partition table
+idf_build_set_property(PARTITION_TABLE_CUSTOM partitions.csv)

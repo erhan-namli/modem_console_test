@@ -22,6 +22,8 @@
 #include "esp_modem_config.h"
 #include "cxx_include/esp_modem_api.hpp"
 
+#include "esp_littlefs.h"
+#include <dirent.h>
 
 #include "esp_ping.h"
 #include "esp_log.h"
@@ -30,6 +32,9 @@
 #include "ping/ping_sock.h"  // Required for the ping functionality
 
 #include "esp_log.h"
+
+// Define the LittleFS configuration
+#define LITTLEFS_BASE_PATH "/littlefs"
 
 
 #if defined(CONFIG_EXAMPLE_SERIAL_CONFIG_USB)
@@ -101,6 +106,35 @@ void wakeup_modem(void)
     vTaskDelay(pdMS_TO_TICKS(2000));
 }
 
+void list_dir(const char *dir_path, int level) {
+    DIR *dir = opendir(dir_path);
+    if (dir == NULL) {
+        ESP_LOGE(TAG, "Failed to open directory: %s", dir_path);
+        return;
+    }
+
+    struct dirent *ent;
+    while ((ent = readdir(dir)) != NULL) {
+        for (int i = 0; i < level; ++i) {
+            printf("  ");  // Indentation for nested directories
+        }
+
+        if (ent->d_type == DT_DIR) {
+            printf("|-- %s/\n", ent->d_name);
+            char next_path[512];  // Increased buffer size to 512 bytes
+            int written = snprintf(next_path, sizeof(next_path), "%s/%s", dir_path, ent->d_name);
+            if (written < 0 || written >= sizeof(next_path)) {
+                ESP_LOGE(TAG, "Path truncated: %s/%s", dir_path, ent->d_name);
+                continue;  // Skip this entry or handle it as needed
+            }
+            list_dir(next_path, level + 1);  // Recursively list the directory contents
+        } else {
+            printf("|-- %s\n", ent->d_name);
+        }
+    }
+    closedir(dir);
+}
+
 #ifdef CONFIG_EXAMPLE_MODEM_DEVICE_SHINY
 command_result handle_urc(uint8_t *data, size_t len)
 {
@@ -125,6 +159,65 @@ extern "C" void app_main(void)
     esp_netif_config_t ppp_netif_config = ESP_NETIF_DEFAULT_PPP();
     esp_netif_t *esp_netif = esp_netif_new(&ppp_netif_config);
     assert(esp_netif);
+    
+       //LittleFS
+    
+      // Initialize LittleFS
+    esp_vfs_littlefs_conf_t conf = {
+        .base_path = LITTLEFS_BASE_PATH,
+        .partition_label = "littlefs",
+        .format_if_mount_failed = true,
+        .dont_mount = false,
+    };
+    
+    esp_err_t ret = esp_vfs_littlefs_register(&conf);
+
+    if (ret != ESP_OK) {
+        if (ret == ESP_FAIL) {
+            ESP_LOGE(TAG, "Failed to mount or format filesystem");
+        } else if (ret == ESP_ERR_NOT_FOUND) {
+            ESP_LOGE(TAG, "Failed to find LittleFS partition");
+        } else {
+            ESP_LOGE(TAG, "Failed to initialize LittleFS (%s)", esp_err_to_name(ret));
+        }
+        return;
+    }
+    
+    ESP_LOGI(TAG, "LittleFS initialized successfully");
+
+    // Use LittleFS
+    FILE* f = fopen(LITTLEFS_BASE_PATH"/hello.txt", "w");
+    if (f == NULL) {
+        ESP_LOGE(TAG, "Failed to open file for writing");
+        return;
+    }
+    fprintf(f, "Hello, LittleFS!\n");
+    fclose(f);
+    ESP_LOGI(TAG, "File written");
+
+    // Create a directory
+    const char *dir_path = LITTLEFS_BASE_PATH"/mydir";
+    ret = mkdir(dir_path, 0777);
+    if (ret != 0) {
+        ESP_LOGE(TAG, "Failed to create directory %s", dir_path);
+    } else {
+        ESP_LOGI(TAG, "Directory created: %s", dir_path);
+    }
+
+    // List directory contents
+    DIR *dir = opendir(LITTLEFS_BASE_PATH);
+    if (dir == NULL) {
+        ESP_LOGE(TAG, "Failed to open directory: %s", LITTLEFS_BASE_PATH);
+        return;
+    }
+
+    struct dirent *ent;
+    while ((ent = readdir(dir)) != NULL) {
+        ESP_LOGI(TAG, "Found %s", ent->d_name);
+    }
+    closedir(dir);
+   
+    
 
 #if defined(CONFIG_EXAMPLE_SERIAL_CONFIG_UART)
     esp_modem_dte_config_t dte_config = ESP_MODEM_DTE_DEFAULT_CONFIG();
@@ -243,6 +336,18 @@ extern "C" void app_main(void)
     modem_console_register_http();
     modem_console_register_ping();
     modem_console_register_http_put();
+    
+    // Define an empty vector of CommandArgs, as no arguments are needed for this command
+const std::vector<CommandArgs> no_args;
+   
+    
+ const ConsoleCommand ShowLittleFSTree("show_littlefs_tree", "Show the contents of the LittleFS filesystem as a tree", no_args, [&](ConsoleCommand * c) {
+    ESP_LOGI(TAG, "LittleFS filesystem structure:");
+    list_dir(LITTLEFS_BASE_PATH, 0);
+    return 0;
+});
+
+    
     const struct SetModeArgs {
         SetModeArgs(): mode(STR1, nullptr, nullptr, "<mode>", "PPP, CMD or CMUX") {}
         CommandArgs mode;
@@ -307,7 +412,7 @@ extern "C" void app_main(void)
         return 0;
     });
 
-    const std::vector<CommandArgs> no_args;
+  
     const ConsoleCommand ReadPinArgs("read_pin", "checks if SIM is unlocked", no_args, [&](ConsoleCommand * c) {
         bool pin_ok;
         ESP_LOGI(TAG, "Checking pin...");
@@ -409,8 +514,6 @@ const ConsoleCommand PingGoogle("ping_google", "Ping Google's DNS (8.8.8.8)", no
     }
     return 0;
 });
-
-
 
 
     const struct GenericCommandArgs {
@@ -577,6 +680,8 @@ const ConsoleCommand PingGoogle("ping_google", "Ping Google's DNS (8.8.8.8)", no
 
     // start console REPL
     ESP_ERROR_CHECK(esp_console_start_repl(s_repl));
+    
+    
     // wait for exit
     exit_signal.wait_any(1, UINT32_MAX);
     s_repl->del(s_repl);

@@ -534,6 +534,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_modem/cmake_install.cmake")
 endif()
 

@@ -81,6 +81,7 @@
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/touch_element/libtouch_element.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/usb/libusb.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/joltwallet__littlefs/libjoltwallet__littlefs.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_modem/libesp_modem.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/espressif__usb_host_cdc_acm/libespressif__usb_host_cdc_acm.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/espressif__esp_modem_usb_dte/libespressif__esp_modem_usb_dte.a
