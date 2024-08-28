@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/CMakeFiles/bootloader
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/CMakeFiles/bootloader.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/CMakeFiles/bootloader-complete.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

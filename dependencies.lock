@@ -1,0 +1,27 @@
+dependencies:
+  espressif/esp_modem:
+    component_hash: null
+    source:
+      path: /home/erhan/esp/esp-protocols/components/esp_modem
+      type: local
+    version: 1.1.0
+  espressif/esp_modem_usb_dte:
+    component_hash: null
+    source:
+      path: /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/components/espressif__esp_modem_usb_dte
+      type: local
+    version: 1.2.1
+  espressif/usb_host_cdc_acm:
+    component_hash: ab16b9893f0c23a26bf620ce968b75b3a1a9394e579257a468202ec9803d937d
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 2.0.3
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.3.0
+manifest_hash: f67a28e826ffaf39b5b9ee49e02fb0fd3360c6623709a54623c0796eeb95ab34
+target: esp32s3
+version: 1.0.0
