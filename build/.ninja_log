@@ -1066,3 +1066,17 @@
 68	224	1724872938603225414	bootloader/bootloader.bin	8e40f89c0d73fe1f
 68	224	1724872938603225414	bootloader/bootloader.map	8e40f89c0d73fe1f
 225	19193	0	CMakeFiles/flash	9c0887487853f2fe
+698	38113	1725112644520621112	build.ninja	19b129ac0cb37aa3
+285	772	1724872938603225414	bootloader-prefix/src/bootloader-stamp/bootloader-build	8e40f89c0d73fe1f
+285	772	1724872938603225414	bootloader/bootloader.elf	8e40f89c0d73fe1f
+285	772	1724872938603225414	bootloader/bootloader.bin	8e40f89c0d73fe1f
+285	772	1724872938603225414	bootloader/bootloader.map	8e40f89c0d73fe1f
+292	1610	1725112646812672575	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	c46a1de7c9e5c65d
+1611	1845	1725112647056678041	esp-idf/esp_app_format/libesp_app_format.a	55de9ac90ebae5cd
+1846	18042	1725112663233033967	esp-idf/main/CMakeFiles/__idf_main.dir/modem_console_main.cpp.obj	566ad97c88d6a25f
+18043	18405	1725112663609042093	esp-idf/main/libmain.a	86dc0ad0a91e2306
+18405	39294	1725112684405481560	esp-idf/esp_system/ld/sections.ld	599109ff17cdf05
+39296	66071	1725112711218019900	modem-console.elf	ae885fb970efac42
+66071	67094	1725112712298040938	.bin_timestamp	b648a8539d11c2b4
+67095	67341	0	esp-idf/esptool_py/CMakeFiles/app_check_size	567d660cfc272fef
+67341	87150	0	CMakeFiles/flash	9c0887487853f2fe

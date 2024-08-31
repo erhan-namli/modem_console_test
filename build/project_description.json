@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "modem-console",
-    "project_version":    "53026e6-dirty",
+    "project_version":    "118e962-dirty",
     "project_path":       "/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console",
     "idf_path":           "/home/erhan/esp/esp-idf",
     "build_dir":          "/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build",
