@@ -56,4 +56,9 @@ httppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlef
 show_littlefs_tree
 ```
 
+## Why These Endpoints?
+
+The reason we are using this specific Heroku server endpoint for HTTPS connections is that we have the corresponding cert.pem, which allows us to perform GET securely and POST requests to this server.
+
+
 
