@@ -1,33 +1,59 @@
-# Modem console example
+# Modem console FPE
 
 ## Overview
 
-This example is mainly targets experimenting with a modem device, sending custom commands and switching to PPP mode using esp-console, command line API.
-Please check the list of supported commands using `help` command.
+This example is designed for experimenting with a modem device, sending custom commands, and switching to PPP mode using the `esp-console` command line API. You can explore the list of supported commands by using the `help` command.
 
-This example implements two very simple network commands to demonstrate and test basic network functionality.
-* `httpget`: Connect and get http content
-* `ping`: Send ICMP pings
+### Important Note
 
-To demonstrate creating custom modem devices, this example creates a DCE object using a locally defined create method,
-that sets up the DCE based on a custom module implemented in the `my_module_dce.hpp` file. The module class only overrides
-`get_module_name()` method supplying a user defined name, but keeps all other commands the same as defined in the `GenericModule`
-class.
+Before using any of the HTTP commands (`httpget`, `httppost`), ensure that the modem is set to `PPP` mode. You can do this using the `set_mode` command.
 
-### USB DTE support
+**Usage:**
+```bash
+set_mode PPP
+```
 
-For USB enabled targets (ESP32-S2, ESP32-S3, or ESP32-P4), it is possible to connect to the modem device via USB.
-1. In menuconfig, navigate to `Example Configuration->Type of serial connection to the modem` and choose `USB`.
-2. Connect the modem USB signals to your ESP chip (pin 19 (DATA-) and 20 (DATA+) for ESP32-S2/S3).
+## Custom Commands
 
-USB example uses Quactel BG96 modem device. BG96 needs a positive pulse on its PWK pin to boot-up.
+This example implements several custom commands to demonstrate and test various functionalities:
 
-This example supports USB modem hot-plugging and reconnection. There is one limitation coming from esp_console component:
-When esp_console REPL is being destroyed (after USB mode disconnection or after `exit` command), it will block on UART read.
-You must send a character to it (via idf.py monitor), so it unblocks and properly exits.
+**Usage:**
 
-### Supported IDF versions
+```bash
+httpget <url>
+```
 
-This example is only supported from `v4.2`, due to support of the console repl mode.
+- GET 500KB File from our server
 
-USB example is supported from `v4.4`.
+```bash
+httpget https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/download/file/364575
+```
+
+```bash
+httppost <url>
+```
+- Upload a 100KB file:
+
+```bash
+httppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlefs/file_100KB.txt
+```
+
+- Upload a 500KB file:
+
+```bash
+httppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlefs/file_500KB.txt
+```
+
+- Upload a 1MB file:
+
+```bash
+httppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlefs/file_1MB.txt
+```
+
+- Show littlefs folder system
+
+```bash
+show_littlefs_tree
+```
+
+
