@@ -1,0 +1,17 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42089797: esp_http_client_set_method at /home/erhan/esp/esp-idf/components/esp_http_client/esp_http_client.c:1126
+[0m
+[0;33m0x400570a4: __memset_aux in ROM
+0x400570a9: __memset_aux in ROM
+[0m
+[0;33m0x42089794: esp_http_client_set_method at /home/erhan/esp/esp-idf/components/esp_http_client/esp_http_client.c:1125
+0x420109a8: upload_file_to_server at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/httppost_handle.c:116
+0x42010aac: do_http_post_client at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/httppost_handle.c:162
+0x4201129b: esp_console_run at /home/erhan/esp/esp-idf/components/console/commands.c:237
+0x420114a2: esp_console_repl_task at /home/erhan/esp/esp-idf/components/console/esp_console_common.c:177
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

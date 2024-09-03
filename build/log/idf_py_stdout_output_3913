@@ -1,0 +1,18 @@
+[1/5] cd /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esptool_py && /home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/erhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/partition_table/partition-table.bin /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/modem-console.bin
+modem-console.bin binary size 0xcfe00 bytes. Smallest app partition is 0x200000 bytes. 0x130200 bytes (59%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader/esp-idf/esptool_py && /home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/erhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader/bootloader.bin
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/3] cd /home/erhan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/erhan/esp/esp-idf -D "SERIAL_TOOL=/home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python;;/home/erhan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build -P /home/erhan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 32MB 0x0 bootloader/bootloader.bin 0x10000 modem-console.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/ttyUSB0
+
+A fatal error occurred: Could not open /dev/ttyUSB0, the port is busy or doesn't exist.
+([Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0')
+
+Hint: Check if the port is correct and ESP connected
+
+FAILED: CMakeFiles/flash 
+cd /home/erhan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/erhan/esp/esp-idf -D "SERIAL_TOOL=/home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python;;/home/erhan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build -P /home/erhan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

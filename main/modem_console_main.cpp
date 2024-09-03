@@ -35,6 +35,8 @@
 
 // Define the LittleFS configuration
 #define LITTLEFS_BASE_PATH "/littlefs"
+// Define the path for the download directory
+#define DOWNLOAD_DIR_PATH LITTLEFS_BASE_PATH "/downloads"
 
 
 #if defined(CONFIG_EXAMPLE_SERIAL_CONFIG_USB)
@@ -73,6 +75,7 @@
 
 extern "C" void modem_console_register_http(void);
 extern "C" void modem_console_register_http_put(void);
+extern "C" void modem_console_register_http_post(void);
 extern "C" void modem_console_register_ping(void);
 
 static const char *TAG = "modem_console";
@@ -135,6 +138,38 @@ void list_dir(const char *dir_path, int level) {
     closedir(dir);
 }
 
+// Function to create a file with a specified size and content
+static void create_file_with_size(const char *file_path, size_t size_in_kb) {
+    FILE *file = fopen(file_path, "w");
+    if (!file) {
+        ESP_LOGE(TAG, "Failed to open file for writing: %s", file_path);
+        return;
+    }
+
+    char *buffer = (char *)malloc(1024);  // 1KB buffer
+    if (!buffer) {
+        ESP_LOGE(TAG, "Failed to allocate buffer");
+        fclose(file);
+        return;
+    }
+
+    memset(buffer, 'A', 1024);  // Fill buffer with dummy data
+
+    // Write the buffer to the file multiple times to reach the desired size
+    for (size_t i = 0; i < size_in_kb; ++i) {
+        if (fwrite(buffer, 1, 1024, file) != 1024) {
+            ESP_LOGE(TAG, "Failed to write data to file: %s", file_path);
+            free(buffer);
+            fclose(file);
+            return;
+        }
+    }
+
+    free(buffer);
+    fclose(file);
+    ESP_LOGI(TAG, "Created file: %s with size: %zu KB", file_path, size_in_kb);
+}
+
 #ifdef CONFIG_EXAMPLE_MODEM_DEVICE_SHINY
 command_result handle_urc(uint8_t *data, size_t len)
 {
@@ -161,15 +196,14 @@ extern "C" void app_main(void)
     assert(esp_netif);
     
        //LittleFS
-    
-      // Initialize LittleFS
+   
     esp_vfs_littlefs_conf_t conf = {
         .base_path = LITTLEFS_BASE_PATH,
         .partition_label = "littlefs",
         .format_if_mount_failed = true,
         .dont_mount = false,
     };
-    
+
     esp_err_t ret = esp_vfs_littlefs_register(&conf);
 
     if (ret != ESP_OK) {
@@ -182,27 +216,26 @@ extern "C" void app_main(void)
         }
         return;
     }
-    
+
     ESP_LOGI(TAG, "LittleFS initialized successfully");
 
-    // Use LittleFS
-    FILE* f = fopen(LITTLEFS_BASE_PATH"/hello.txt", "w");
-    if (f == NULL) {
-        ESP_LOGE(TAG, "Failed to open file for writing");
-        return;
-    }
-    fprintf(f, "Hello, LittleFS!\n");
-    fclose(f);
-    ESP_LOGI(TAG, "File written");
+    // Create files with specific sizes
+    create_file_with_size(LITTLEFS_BASE_PATH"/file_100KB.txt", 100);  // 100KB file
+    create_file_with_size(LITTLEFS_BASE_PATH"/file_500KB.txt", 500);  // 500KB file
+    create_file_with_size(LITTLEFS_BASE_PATH"/file_1MB.txt", 1024);   // 1MB file
 
-    // Create a directory
-    const char *dir_path = LITTLEFS_BASE_PATH"/mydir";
-    ret = mkdir(dir_path, 0777);
-    if (ret != 0) {
-        ESP_LOGE(TAG, "Failed to create directory %s", dir_path);
+    // Create the download directory
+    ret = mkdir(DOWNLOAD_DIR_PATH, 0755);
+    if (ret != 0 && errno != EEXIST) {
+        ESP_LOGE(TAG, "Failed to create download directory: %s", strerror(errno));
+        return;
     } else {
-        ESP_LOGI(TAG, "Directory created: %s", dir_path);
+        ESP_LOGI(TAG, "Download directory created or already exists");
     }
+
+
+    // List directory contents to verify
+    list_dir(LITTLEFS_BASE_PATH, 0);
 
     // List directory contents
     DIR *dir = opendir(LITTLEFS_BASE_PATH);
@@ -307,6 +340,8 @@ extern "C" void app_main(void)
         }
         ESP_LOGI(TAG, "set_flow_control OK");
     }
+    
+    
 
     // init console REPL environment
     esp_console_repl_config_t repl_config = ESP_CONSOLE_REPL_CONFIG_DEFAULT();
@@ -336,6 +371,7 @@ extern "C" void app_main(void)
     modem_console_register_http();
     modem_console_register_ping();
     modem_console_register_http_put();
+    modem_console_register_http_post();
     
     // Define an empty vector of CommandArgs, as no arguments are needed for this command
 const std::vector<CommandArgs> no_args;
@@ -346,6 +382,7 @@ const std::vector<CommandArgs> no_args;
     list_dir(LITTLEFS_BASE_PATH, 0);
     return 0;
 });
+
 
     
     const struct SetModeArgs {
@@ -691,3 +728,4 @@ const ConsoleCommand PingGoogle("ping_google", "Ping Google's DNS (8.8.8.8)", no
 } // while (1)
 #endif
 }
+

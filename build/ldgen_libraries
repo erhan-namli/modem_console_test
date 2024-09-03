@@ -66,6 +66,7 @@
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_http_server/libesp_http_server.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_https_ota/libesp_https_ota.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_https_server/libesp_https_server.a
+/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_psram/libesp_psram.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esp_lcd/libesp_lcd.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/protobuf-c/libprotobuf-c.a
 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/protocomm/libprotocomm.a

@@ -1,0 +1,378 @@
+AM available for dynamic allocation:[0m
+[0;32mI (428) heap_init: At 3FC9A9F0 len 0004ED20 (315 Ki�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (33) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug 28 2024 12:22:19[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (93) boot:  3 littlefs         Unknown data     01 83 00210000 00800000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2bd58h (179544) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0003bd80 vaddr=3fc96200 size=02cech ( 11500) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003ea74 vaddr=40374000 size=015a4h (  5540) load[0m
+[0;32mI (164) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8eb34h (584500) map[0m
+[0;32mI (309) esp_image: segment 4: paddr=000ceb5c vaddr=403755a4 size=10c04h ( 68612) load[0m
+[0;32mI (329) esp_image: segment 5: paddr=000df768 vaddr=50000000 size=00018h (    24) load[0m
+[0;32mI (329) esp_image: segment 6: paddr=000df788 vaddr=600fe000 size=00100h (   256) load[0m
+[0;32mI (335) esp_image: segment 7: paddr=000df890 vaddr=600fe100 size=00008h (     8) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (351) boot: Disabling RNG early entropy source...[0m
+[0;32mI (366) cpu_start: Multicore app[0m
+[0;32mI (376) cpu_start: Pro cpu start user code[0m
+[0;32mI (376) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (376) app_init: Application information:[0m
+[0;32mI (379) app_init: Project name:     modem-console[0m
+[0;32mI (384) app_init: App version:      6f47db3-dirty[0m
+[0;32mI (390) app_init: Compile time:     Aug 31 2024 07:43:12[0m
+[0;32mI (396) app_init: ELF file SHA256:  40f55dc93bb80bbe...[0m
+[0;32mI (402) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (406) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (411) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (421) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (428) heap_init: At 3FC9A9F0 len 0004ED20 (315 KiB): RAM[0m
+[0;32mI (434) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (440) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 600FE108 len 00001EE0 (7 KiB): RTCRAM[0m
+[0;33mW (453) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (463) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (468) spi_flash: flash io: opi_str[0m
+[0;32mI (473) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (479) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (487) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[0;32mI (507) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (517) modem_console: LittleFS initialized successfully[0m
+[0;32mI (527) modem_console: File written[0m
+[0;31mE (527) modem_console: Failed to create directory /littlefs/mydir[0m
+[0;32mI (537) modem_console: Found hello.txt[0m
+[0;32mI (537) modem_console: Found mydir[0m
+[0;32mI (537) modem_console: Initializing esp_modem for the BG96 module...[0m
+[0;32mI (547) modem_console: Waiting for USB device connection...[0m
+[0;31mE (887) HUB: Bad transfer status 1: CHECK_SHORT_DEV_DESC[0m
+[0;31mE (887) HUB: Stage failed: CHECK_SHORT_DEV_DESC[0m
+[0;31mE (17657) HUB: Root port reset failed[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (33) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug 28 2024 12:22:19[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (93) boot:  3 littlefs         Unknown data     01 83 00210000 00800000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2bd58h (179544) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0003bd80 vaddr=3fc96200 size=02cech ( 11500) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003ea74 vaddr=40374000 size=015a4h (  5540) load[0m
+[0;32mI (164) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8eb34h (584500) map[0m
+[0;32mI (309) esp_image: segment 4: paddr=000ceb5c vaddr=403755a4 size=10c04h ( 68612) load[0m
+[0;32mI (329) esp_image: segment 5: paddr=000df768 vaddr=50000000 size=00018h (    24) load[0m
+[0;32mI (329) esp_image: segment 6: paddr=000df788 vaddr=600fe000 size=00100h (   256) load[0m
+[0;32mI (335) esp_image: segment 7: paddr=000df890 vaddr=600fe100 size=00008h (     8) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (351) boot: Disabling RNG early entropy source...[0m
+[0;32mI (366) cpu_start: Multicore app[0m
+[0;32mI (376) cpu_start: Pro cpu start user code[0m
+[0;32mI (376) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (376) app_init: Application information:[0m
+[0;32mI (379) app_init: Project name:     modem-console[0m
+[0;32mI (384) app_init: App version:      6f47db3-dirty[0m
+[0;32mI (390) app_init: Compile time:     Aug 31 2024 07:43:12[0m
+[0;32mI (396) app_init: ELF file SHA256:  40f55dc93bb80bbe...[0m
+[0;32mI (402) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (406) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (411) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (421) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (428) heap_init: At 3FC9A9F0 len 0004ED20 (315 KiB): RAM[0m
+[0;32mI (434) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (440) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 600FE108 len 00001EE0 (7 KiB): RTCRAM[0m
+[0;33mW (453) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (463) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (468) spi_flash: flash io: opi_str[0m
+[0;32mI (473) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (479) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (487) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[0;32mI (507) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (517) modem_console: LittleFS initialized successfully[0m
+[0;32mI (537) modem_console: File written[0m
+[0;31mE (537) modem_console: Failed to create directory /littlefs/mydir[0m
+[0;32mI (547) modem_console: Found hello.txt[0m
+[0;32mI (547) modem_console: Found mydir[0m
+[0;32mI (547) modem_console: Initializing esp_modem for the BG96 module...[0m
+[0;32mI (557) modem_console: Waiting for USB device connection...[0m
+[0;31mE (5667) HUB: Root port reset failed[0m
+[5n
+Type 'help' to get the list of commands.
+Use UP/DOWN arrows to navigate through command history.
+Press TAB when typing command name to auto-complete.
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0ms[6C[0K[0;32mesp> [0mse[7C[0K[0;32mesp> [0mset[8C[0K[0;32mesp> [0mse[7C[0K[0;32mesp> [0mse[8C[0K[0;32mesp> [0mses[9C[0K[0;32mesp> [0mse[8C[0K[0;32mesp> [0mse[7C[0K[0;32mesp> [0ms[6C[0K[0;32mesp> [0m[5C[0K[0;32mesp> [0ms[6C[0K[0;32mesp> [0mse[7C[0K[0;32mesp> [0mset[8C[0K[0;32mesp> [0mset_[9C[0K[0;32mesp> [0mset_m[10C[0K[0;32mesp> [0mset_mo[11C[0K[0;32mesp> [0mset_mod[12C[0K[0;32mesp> [0mset_mode[0;36;49m <mode>[0m[13C[0K[0;32mesp> [0mset_mode [14C[0K[0;32mesp> [0mset_mode P[15C[0K[0;32mesp> [0mset_mode PP[16C[0K[0;32mesp> [0mset_mode PPP[17C[0K[0;32mesp> [0mset_mode PPP[17C
+[0;32mI (27577) modem_console: Switching to PPP name...[0m
+[0;32mI (27607) modem_console: OK[0m
+[6n [0;32mI (27627) esp-netif_lwip-ppp: Connected[0m
+[999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0mh[6Cttppost /littlefs/hello.txt[0K[0;32mesp> [0mhttppost /littlefs/hello.txt[33C
+httppost: missing option <file>
+Command returned non-zero error code: 0x1 (ERROR)
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0mh[6Cttppost "" /littlefs/hello.txt[0K[0;32mesp> [0mhttppost "" /littlefs/hello.txt[36C
+[0;31mE (82577) HTTP_CLIENT: invalid host[0m
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42089797  PS      : 0x00060930  A0      : 0x820109ab  A1      : 0x3fca9c40  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x00000011  A5      : 0x3fc9b654  
+A6      : 0x3c0a4828  A7      : 0x3fcaf1e0  A8      : 0x82078e22  A9      : 0x3fca9c30  
+A10     : 0x00000000  A11     : 0x3fc9b654  A12     : 0x00000011  A13     : 0x3fc9b654  
+A14     : 0x00000011  A15     : 0x3fca9f70  SAR     : 0x0000000b  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570a4  LEND    : 0x400570a9  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42089794:0x3fca9c40 0x420109a8:0x3fca9c60 0x42010aac:0x3fca9c90 0x4201129b:0x3fca9d50 0x420114a2:0x3fca9d70 0x4037d76d:0x3fca9da0
+
+
+
+
+ELF file SHA256: 40f55dc93bb80bbe
+
+Rebooting...
+ �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d14
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (37) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Aug 28 2024 12:22:19[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (44) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (54) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (75) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (90) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (98) boot:  3 littlefs         Unknown data     01 83 00210000 00800000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (110) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2bd58h (179544) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003bd80 vaddr=3fc96200 size=02cech ( 11500) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003ea74 vaddr=40374000 size=015a4h (  5540) load[0m
+[0;32mI (168) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8eb34h (584500) map[0m
+[0;32mI (314) esp_image: segment 4: paddr=000ceb5c vaddr=403755a4 size=10c04h ( 68612) load[0m
+[0;32mI (333) esp_image: segment 5: paddr=000df768 vaddr=50000000 size=00018h (    24) load[0m
+[0;32mI (334) esp_image: segment 6: paddr=000df788 vaddr=600fe000 size=00100h (   256) load[0m
+[0;32mI (339) esp_image: segment 7: paddr=000df890 vaddr=600fe100 size=00008h (     8) load[0m
+[0;32mI (355) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (355) boot: Disabling RNG early entropy source...[0m
+[0;32mI (371) cpu_start: Multicore app[0m
+[0;32mI (380) cpu_start: Pro cpu start user code[0m
+[0;32mI (380) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (380) app_init: Application information:[0m
+[0;32mI (383) app_init: Project name:     modem-console[0m
+[0;32mI (389) app_init: App version:      6f47db3-dirty[0m
+[0;32mI (394) app_init: Compile time:     Aug 31 2024 07:43:12[0m
+[0;32mI (400) app_init: ELF file SHA256:  40f55dc93bb80bbe...[0m
+[0;32mI (406) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (411) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (415) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (420) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (425) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (432) heap_init: At 3FC9A9F0 len 0004ED20 (315 KiB): RAM[0m
+[0;32mI (438) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (445) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (451) heap_init: At 600FE108 len 00001EE0 (7 KiB): RTCRAM[0m
+[0;33mW (458) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (468) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (472) spi_flash: flash io: opi_str[0m
+[0;32mI (477) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (484) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (491) main_task: Started on CPU0[0m
+[0;32mI (511) main_task: Calling app_main()[0m
+[0;32mI (511) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (521) modem_console: LittleFS initialized successfully[0m
+[0;32mI (541) modem_console: File written[0m
+[0;31mE (541) modem_console: Failed to create directory /littlefs/mydir[0m
+[0;32mI (551) modem_console: Found hello.txt[0m
+[0;32mI (551) modem_console: Found mydir[0m
+[0;32mI (551) modem_console: Initializing esp_modem for the BG96 module...[0m
+[0;32mI (561) modem_console: Waiting for USB device connection...[0m
+[5n
+Type 'help' to get the list of commands.
+Use UP/DOWN arrows to navigate through command history.
+Press TAB when typing command name to auto-complete.
+
+Your terminal application does not support escape sequences.
+
+Line editing and history features are disabled.
+
+On Windows, try using Putty instead.
+esp> [0n
+Unrecognized command
+esp> htt   set_mode PPP
+[0;32mI (34091) modem_console: Switching to PPP name...[0m
+[0;31mE (34591) modem_console: Failed to set the desired mode[0m
+Command returned non-zero error code: 0x1 (ERROR)
+esp> get_ip
+[0;31mE (38691) modem_console: Modem is not in PPP mode. Please switch to PPP mode first.[0m
+esp> [0;31mE (47621) USBH: Device 1 gone[0m
+[0;33mW (47621) usb_terminal: USB terminal disconnected[0m
+[0;32mI (47621) modem_console: error handler 3[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (33) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug 28 2024 12:22:19[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (93) boot:  3 littlefs         Unknown data     01 83 00210000 00800000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2bd58h (179544) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0003bd80 vaddr=3fc96200 size=02cech ( 11500) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003ea74 vaddr=40374000 size=015a4h (  5540) load[0m
+[0;32mI (164) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8eb34h (584500) map[0m
+[0;32mI (309) esp_image: segment 4: paddr=000ceb5c vaddr=403755a4 size=10c04h ( 68612) load[0m
+[0;32mI (329) esp_image: segment 5: paddr=000df768 vaddr=50000000 size=00018h (    24) load[0m
+[0;32mI (329) esp_image: segment 6: paddr=000df788 vaddr=600fe000 size=00100h (   256) load[0m
+[0;32mI (335) esp_image: segment 7: paddr=000df890 vaddr=600fe100 size=00008h (     8) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (351) boot: Disabling RNG early entropy source...[0m
+[0;32mI (366) cpu_start: Multicore app[0m
+[0;32mI (376) cpu_start: Pro cpu start user code[0m
+[0;32mI (376) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (376) app_init: Application information:[0m
+[0;32mI (379) app_init: Project name:     modem-console[0m
+[0;32mI (384) app_init: App version:      6f47db3-dirty[0m
+[0;32mI (390) app_init: Compile time:     Aug 31 2024 07:43:12[0m
+[0;32mI (396) app_init: ELF file SHA256:  40f55dc93bb80bbe...[0m
+[0;32mI (402) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (406) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (411) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (421) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (428) heap_init: At 3FC9A9F0 len 0004ED20 (315 KiB): RAM[0m
+[0;32mI (434) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (440) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 600FE108 len 00001EE0 (7 KiB): RTCRAM[0m
+[0;33mW (453) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (463) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (468) spi_flash: flash io: opi_str[0m
+[0;32mI (473) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (479) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (487) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[0;32mI (507) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (527) modem_console: LittleFS initialized successfully[0m
+[0;32mI (537) modem_console: File written[0m
+[0;31mE (537) modem_console: Failed to create directory /littlefs/mydir[0m
+[0;32mI (547) modem_console: Found hello.txt[0m
+[0;32mI (547) modem_console: Found mydir[0m
+[0;32mI (547) modem_console: Initializing esp_modem for the BG96 module...[0m
+[0;32mI (557) modem_console: Waiting for USB device connection...[0m
+[0;31mE (9697) HUB: Root port reset failed[0m
+[0;31mE (20677) HUB: Root port reset failed[0m
+[0;31mE (31447) HUB: Root port reset failed[0m
+[5n
+Type 'help' to get the list of commands.
+Use UP/DOWN arrows to navigate through command history.
+Press TAB when typing command name to auto-complete.
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0ms[6C[0K[0;32mesp> [0mse[7C[0K[0;32mesp> [0mset[8C[0K[0;32mesp> [0mset_[9C[0K[0;32mesp> [0mset_m[10C[0K[0;32mesp> [0mset_mo[11C[0K[0;32mesp> [0mset_mod[12C[0K[0;32mesp> [0mset_mode[0;36;49m <mode>[0m[13C[0K[0;32mesp> [0mset_mode [14C[0K[0;32mesp> [0mset_mode P[15C[0K[0;32mesp> [0mset_mode PP[16C[0K[0;32mesp> [0mset_mode PPP[17C[0K[0;32mesp> [0mset_mode PPP[17C
+[0;32mI (46507) modem_console: Switching to PPP name...[0m
+[0;32mI (46527) modem_console: OK[0m
+[6n [0;32mI (46547) esp-netif_lwip-ppp: Connected[0m
+[999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0mg[6C[0K[0;32mesp> [0mge[7C[0K[0;32mesp> [0mget[8C[0K[0;32mesp> [0mget_[9C[0K[0;32mesp> [0mget_i[10C[0K[0;32mesp> [0mget_ip[0;36;49m[0m[11C[0K[0;32mesp> [0mget_ip[11C
+[0;32mI (49257) modem_console: IP Address: 10.59.196.243[0m
+[0;32mI (49257) modem_console: Netmask: 255.255.255.255[0m
+[0;32mI (49257) modem_console: Gateway: 10.64.64.64[0m
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0mp[6C[0K[0;32mesp> [0mpi[7C[0K[0;32mesp> [0mpin[8C[0K[0;32mesp> [0mping[0;36;49m [-W <t>] [-c <n>] <host>[0m[9C[0K[0;32mesp> [0mping [10C[0K[0;32mesp> [0mping 8[11C[0K[0;32mesp> [0mping 8.[12C[0K[0;32mesp> [0mping 8.8[13C[0K[0;32mesp> [0mping 8.8.[14C[0K[0;32mesp> [0mping 8.8.8[15C[0K[0;32mesp> [0mping 8.8.8.[16C[0K[0;32mesp> [0mping 8.8.8.8[17C[0K[0;32mesp> [0mping 8.8.8.8[17C
+[6n [999C [6n [138D[0;32mesp> [0m[0;32mI (52557) modem_console_ping: 64 bytes from 8.8.8.8 icmp_seq=1 ttl=112 time=173 ms
+[0m
+[0;32mI (53427) modem_console_ping: 64 bytes from 8.8.8.8 icmp_seq=2 ttl=112 time=46 ms
+[0m
+[0;32mI (54457) modem_console_ping: 64 bytes from 8.8.8.8 icmp_seq=3 ttl=112 time=72 ms
+[0m
+[0;32mI (55427) modem_console_ping: 64 bytes from 8.8.8.8 icmp_seq=4 ttl=112 time=47 ms
+[0m
+[0;32mI (56427) modem_console_ping: 64 bytes from 8.8.8.8 icmp_seq=5 ttl=112 time=44 ms
+[0m
+[0;32mI (57387) modem_console_ping: 
+--- 8.8.8.8 ping statistics ---
+[0m
+[0;32mI (57387) modem_console_ping: 5 packets transmitted, 5 received, 0 packet loss, time 382ms
+[0m
+[0K[0;32mesp> [0m[5C
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0m[5C
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0mh[6Cttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[90C
+[0;32mI (80047) modem_console_httppost: File uploaded successfully, status = 405, content_length = 153[0m
+[0;32mI (80047) modem_console_httppost: HTTP_POST_EVENT_DISCONNECTED[0m
+[6n [999C [6n [138D[0;32mesp> [0m[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[90C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[89C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[88C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[87C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[86C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[85C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[84C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[83C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[82C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[81C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[80C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[79C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[78C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[77C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[76C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[75C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[74C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[73C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[72C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[71C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[70C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/U /littlefs/hello.txt[71C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/UP /littlefs/hello.txt[72C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/UPL /littlefs/hello.txt[73C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/UPLO /littlefs/hello.txt[74C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/UPL /littlefs/hello.txt[73C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/UP /littlefs/hello.txt[72C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/U /littlefs/hello.txt[71C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/ /littlefs/hello.txt[70C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/u /littlefs/hello.txt[71C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/up /littlefs/hello.txt[72C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upl /littlefs/hello.txt[73C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/uplo /littlefs/hello.txt[74C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/uploa /littlefs/hello.txt[75C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlefs/hello.txt[76C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlefs/hello.txt[96C[0K[0;32mesp> [0mhttppost https://app-esp32-modem-test-8d3ed92fa208.herokuapp.com/upload /littlefs/hello.txt[96C
+[0;31mE (97527) HTTP_CLIENT: Error, reach max_redirection_count count=10[0m
+[0;31mE (97527) HTTP_CLIENT: Error response[0m
+[0;31mE (97527) modem_console_httppost: File upload failed: ESP_ERR_HTTP_MAX_REDIRECT[0m
+[0;32mI (97547) modem_console_httppost: HTTP_POST_EVENT_DISCONNECTED[0m
+Command returned non-zero error code: 0x1 (ERROR)
+[6n [999C [6n [138D[0;32mesp> [0m

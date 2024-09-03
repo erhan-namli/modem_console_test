@@ -1,0 +1,16 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42051474: esp_http_client_perform at /home/erhan/esp/esp-idf/components/esp_http_client/esp_http_client.c:1270
+[0m
+[0;33m0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m0x42051471: esp_http_client_perform at /home/erhan/esp/esp-idf/components/esp_http_client/esp_http_client.c:1270
+0x42010c4a: do_http_client at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/httpget_handle.c:116
+0x42011b4b: esp_console_run at /home/erhan/esp/esp-idf/components/console/commands.c:237
+0x42011d52: esp_console_repl_task at /home/erhan/esp/esp-idf/components/console/esp_console_common.c:177
+0x4037e4e5: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375ed4: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

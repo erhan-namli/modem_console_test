@@ -1,0 +1,21 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader/esp-idf/esptool_py && /home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/erhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader/bootloader.bin
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/7] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/modem_console_main.cpp.obj
+../main/modem_console_main.cpp: In function 'void app_main()':
+../main/modem_console_main.cpp:172:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::partition' [-Wmissing-field-initializers]
+  172 |     };
+      |     ^
+../main/modem_console_main.cpp:172:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::read_only' [-Wmissing-field-initializers]
+../main/modem_console_main.cpp:172:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::grow_on_mount' [-Wmissing-field-initializers]
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable modem-console.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/modem-console.bin
+[7/7] cd /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esptool_py && /home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/erhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/partition_table/partition-table.bin /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/modem-console.bin
+modem-console.bin binary size 0xcfe70 bytes. Smallest app partition is 0x200000 bytes. 0x130190 bytes (59%) free.

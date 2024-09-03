@@ -1,0 +1,133 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (33) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug 28 2024 12:22:19[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (93) boot:  3 littlefs         Unknown data     01 83 00210000 00800000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2ba98h (178840) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0003bac0 vaddr=3fc96200 size=02cech ( 11500) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003e7b4 vaddr=40374000 size=01864h (  6244) load[0m
+[0;32mI (164) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8e604h (583172) map[0m
+[0;32mI (309) esp_image: segment 4: paddr=000ce62c vaddr=40375864 size=10944h ( 67908) load[0m
+[0;32mI (328) esp_image: segment 5: paddr=000def78 vaddr=50000000 size=00018h (    24) load[0m
+[0;32mI (328) esp_image: segment 6: paddr=000def98 vaddr=600fe000 size=00100h (   256) load[0m
+[0;32mI (334) esp_image: segment 7: paddr=000df0a0 vaddr=600fe100 size=00008h (     8) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (365) cpu_start: Multicore app[0m
+[0;32mI (375) cpu_start: Pro cpu start user code[0m
+[0;32mI (375) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (375) app_init: Application information:[0m
+[0;32mI (378) app_init: Project name:     modem-console[0m
+[0;32mI (384) app_init: App version:      6f47db3-dirty[0m
+[0;32mI (389) app_init: Compile time:     Aug 31 2024 07:43:12[0m
+[0;32mI (395) app_init: ELF file SHA256:  7389dffc5856d8de...[0m
+[0;32mI (401) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (406) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (410) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (415) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (420) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (427) heap_init: At 3FC9A9E0 len 0004ED30 (315 KiB): RAM[0m
+[0;32mI (433) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (440) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 600FE108 len 00001EE0 (7 KiB): RTCRAM[0m
+[0;33mW (453) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (463) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (467) spi_flash: flash io: opi_str[0m
+[0;32mI (472) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (479) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (486) main_task: Started on CPU0[0m
+[0;32mI (506) main_task: Calling app_main()[0m
+[0;32mI (506) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (516) modem_console: LittleFS initialized successfully[0m
+[0;32mI (536) modem_console: File written[0m
+[0;31mE (536) modem_console: Failed to create directory /littlefs/mydir[0m
+[0;32mI (546) modem_console: Found hello.txt[0m
+[0;32mI (546) modem_console: Found mydir[0m
+[0;32mI (546) modem_console: Initializing esp_modem for the BG96 module...[0m
+[0;32mI (556) modem_console: Waiting for USB device connection...[0m
+[0;31mE (896) HUB: Bad transfer status 1: CHECK_SHORT_DEV_DESC[0m
+[0;31mE (896) HUB: Stage failed: CHECK_SHORT_DEV_DESC[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (33) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug 28 2024 12:22:19[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (93) boot:  3 littlefs         Unknown data     01 83 00210000 00800000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2ba98h (178840) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0003bac0 vaddr=3fc96200 size=02cech ( 11500) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003e7b4 vaddr=40374000 size=01864h (  6244) load[0m
+[0;32mI (164) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8e604h (583172) map[0m
+[0;32mI (309) esp_image: segment 4: paddr=000ce62c vaddr=40375864 size=10944h ( 67908) load[0m
+[0;32mI (328) esp_image: segment 5: paddr=000def78 vaddr=50000000 size=00018h (    24) load[0m
+[0;32mI (328) esp_image: segment 6: paddr=000def98 vaddr=600fe000 size=00100h (   256) load[0m
+[0;32mI (334) esp_image: segment 7: paddr=000df0a0 vaddr=600fe100 size=00008h (     8) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (365) cpu_start: Multicore app[0m
+[0;32mI (375) cpu_start: Pro cpu start user code[0m
+[0;32mI (375) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (375) app_init: Application information:[0m
+[0;32mI (378) app_init: Project name:     modem-console[0m
+[0;32mI (384) app_init: App version:      6f47db3-dirty[0m
+[0;32mI (389) app_init: Compile time:     Aug 31 2024 07:43:12[0m
+[0;32mI (395) app_init: ELF file SHA256:  7389dffc5856d8de...[0m
+[0;32mI (401) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (406) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (410) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (415) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (420) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (427) heap_init: At 3FC9A9E0 len 0004ED30 (315 KiB): RAM[0m
+[0;32mI (433) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (440) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 600FE108 len 00001EE0 (7 KiB): RTCRAM[0m
+[0;33mW (453) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (463) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (467) spi_flash: flash io: opi_str[0m
+[0;32mI (472) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (479) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (486) main_task: Started on CPU0[0m
+[0;32mI (506) main_task: Calling app_main()[0m
+[0;32mI (506)

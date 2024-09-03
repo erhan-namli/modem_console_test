@@ -1,0 +1,92 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375dda: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037cc1d: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x403841d9: __assert_func at /home/erhan/esp/esp-idf/components/newlib/assert.c:80
+0x42010729: ConsoleCommand::RegisterCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:34 (discriminator 1)
+0x42010865: ConsoleCommand::ConsoleCommand(char const*, char const*, std::vector<CommandArgs, std::allocator<CommandArgs> > const&, std::function<bool (ConsoleCommand*)>) at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/console_helper.cpp:19
+0x4200ff46: app_main at /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/../main/modem_console_main.cpp:712 (discriminator 1)
+0x4208e357: main_task at /home/erhan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d76d: vPortTaskWrapper at /home/erhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375d14: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[1;31m--- unknown menu character Ctrl+Z --[0m
+[0m

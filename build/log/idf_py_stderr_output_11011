@@ -1,0 +1,615 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+[0m
+[0;33m0x40375f3e: panic_abort at /home/erhan/esp/esp-idf/components/esp_system/panic.c:463
+0x4037d695: esp_system_abort at /home/erhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40384ae9: abort at /home/erhan/esp/esp-idf/components/newlib/abort.c:38
+0x403758a5: call_start_cpu0 at /home/erhan/esp/esp-idf/components/esp_system/port/cpu_start.c:582
+0x40045c01: ets_run_flash_bootloader in ROM
+0x40043ab6: main in ROM
+0x40034c45: .stack_ok in ROM
+[0m
+[0;33m0x40375e78: esp_restart_noos at /home/erhan/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

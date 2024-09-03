@@ -1,0 +1,69 @@
+[1/5] cd /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/esp-idf/esptool_py && /home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/erhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/partition_table/partition-table.bin /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/modem-console.bin
+modem-console.bin binary size 0xcfed0 bytes. Smallest app partition is 0x200000 bytes. 0x130130 bytes (59%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader/esp-idf/esptool_py && /home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/erhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build/bootloader/bootloader.bin
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/3] cd /home/erhan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/erhan/esp/esp-idf -D "SERIAL_TOOL=/home/erhan/.espressif/python_env/idf5.3_py3.8_env/bin/python;;/home/erhan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/erhan/esp/esp-protocols/components/esp_modem/examples/modem_console/build -P /home/erhan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 32MB 0x0 bootloader/bootloader.bin 0x10000 modem-console.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_1v8)
+Crystal is 40MHz
+MAC: 34:85:18:a1:f7:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000dffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21088 bytes to 13044...
+Writing at 0x00000000... (100 %)
+Wrote 21088 bytes (13044 compressed) at 0x00000000 in 0.6 seconds (effective 288.0 kbit/s)...
+Hash of data verified.
+Compressed 851664 bytes to 498488...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d4f5... (6 %)
+Writing at 0x0002a6d4... (9 %)
+Writing at 0x0003231a... (12 %)
+Writing at 0x00037275... (16 %)
+Writing at 0x0003fec6... (19 %)
+Writing at 0x00046032... (22 %)
+Writing at 0x0004c7f9... (25 %)
+Writing at 0x00052d6c... (29 %)
+Writing at 0x00058712... (32 %)
+Writing at 0x0005f3b7... (35 %)
+Writing at 0x0006556b... (38 %)
+Writing at 0x0006bc7e... (41 %)
+Writing at 0x00071705... (45 %)
+Writing at 0x00077304... (48 %)
+Writing at 0x0007ce4f... (51 %)
+Writing at 0x00082cfa... (54 %)
+Writing at 0x00088a80... (58 %)
+Writing at 0x0008ecf6... (61 %)
+Writing at 0x000947e0... (64 %)
+Writing at 0x0009a566... (67 %)
+Writing at 0x000a0a88... (70 %)
+Writing at 0x000a6b0e... (74 %)
+Writing at 0x000ac8a1... (77 %)
+Writing at 0x000b2ff4... (80 %)
+Writing at 0x000babea... (83 %)
+Writing at 0x000c2adf... (87 %)
+Writing at 0x000ca668... (90 %)
+Writing at 0x000d083a... (93 %)
+Writing at 0x000d690c... (96 %)
+Writing at 0x000dd0d9... (100 %)
+Wrote 851664 bytes (498488 compressed) at 0x00010000 in 14.0 seconds (effective 487.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 121...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (121 compressed) at 0x00008000 in 0.1 seconds (effective 488.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
